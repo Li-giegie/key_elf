@@ -1,0 +1,23 @@
+conf:
+    enable_check_refresh: true
+    sleep: 100ms
+sleep: 100ms
+tasks:
+    - name: hello
+      description: 在cmd中输出hello.
+      keys:
+        - name: ctrl
+          tag: left
+        - name: "1"
+          tag: left
+      run:
+        - echo hello
+    - name: 输出world
+      description: 描述......
+      keys:
+        - name: ctrl
+          tag: left
+        - name: W
+      run:
+        - echo world
+debug: false
